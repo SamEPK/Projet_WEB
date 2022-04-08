@@ -3,4 +3,4 @@ Projet en développement.
 
 ---
 
-[Voir la page](https://samalairbien.github.io/cinema_ppe/index.html)
+[Voir la page](https://samalairbien.github.io/Projet_WEB/index.html)
