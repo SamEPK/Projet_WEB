@@ -1,0 +1,66 @@
+/*reset css*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem 'Montserrat',sans-serif;
+    margin: 0;
+    background-color: #292F33;
+    line-height: 1.6;
+    text-rendering:optimizeLegibility;
+    color: rgb(223, 223, 223);
+}
+h1,h2,h3,h4,p,ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+/* scroll bars */
+*{
+    /* For FF and non-webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: #000 #FFF;
+}
+*::-webkit-scrollbar {
+    width: .6rem;
+}
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(92, 91, 91);
+    outline: thin solid #222;
+}
+header{
+    justify-content: center;
+    display: flex; 
+    flex-direction:row-reverse;
+}
+header h1{
+    border: .15rem solid;
+    margin-left: 4rem;
+}
+header img{
+    display: flex;
+   
+    max-width: 10rem;
+}
+figure ul{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: .1rem solid;
+    border-color: black;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+figure ul li{
+    margin: 0 auto;
+}
+figure img{
+   width: 10rem;
+}
