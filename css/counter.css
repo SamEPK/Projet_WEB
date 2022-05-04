@@ -1,0 +1,14 @@
+.wrapper{
+    height: auto;
+    width: auto;
+    background-color: red;
+}
+.wrapper h1{
+    color: #fff;
+    background-color: green;
+}
+
+.wrapper h3{
+    color: #fff;
+    background-color: blue;
+}
