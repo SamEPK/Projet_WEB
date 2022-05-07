@@ -52,7 +52,6 @@ a{
 header{
     justify-content: center;
     display: flex; 
-    align-items: center;
     flex-direction:row-reverse;
     padding: 2rem;
     background-color: var(--header-color);
@@ -71,14 +70,6 @@ section h2{
     text-align: center;
     padding-top: 4rem;
     color: #FFF;
-}
-section p{
-    text-align: center;
-    max-width: 90rem;
-    margin: 5rem auto; 
-    padding: 2rem;
-    color: #FFF;
-    background-color: var(--secondary-color);
 }
  /* ul{
     display: grid;
@@ -103,76 +94,12 @@ ul figure{
 ul figure .material-icons{
     vertical-align: -.4rem;
 }
-header .connex{
-    color: white;
-    background-color: var(--secondary-color);
-    display: block;
-    margin-left: 5rem;
-	padding: 1rem;
-	text-align: center;
-    border: solid .1rem var(--main-color);
-    
-}
-main a{
-    color: white;
-    background-color: var(--secondary-color);
-    display: block;
-	margin: 5rem auto;
-	padding: 1.5rem;
-	text-align: center;
-	max-width: 40rem;
-}
 footer p{
     text-align: center;
     padding-bottom: 5rem;
     margin: 0 auto;
 }
-/* .content {
-    margin:0 auto;
-}
-.container {
-    max-width:37rem;
-    height:auto;
-    perspective: 1000px;
-    perspective-origin: 50% 50%;
-    transform-origin:0 50%;
-    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.5);
-    transition:all .3s ease-out;
-    transform-origin: 50% 50%;
-}
-.container:hover {
-    box-shadow: 30px 30px 20px 0px rgba(0,0,0,0.3);
-    transform:scaleX(1.01) scaleY(1.01);
-}
-.visuel {
-    width:100%;
-    height:100%;
-    position:relative;
-    transition: all .3s ease-out;
-    transform-origin: 0px 0px 0px;
-    border-radius:2px;
-    overflow:hidden;
-  
-}
-.visuel:hover {
-    transform: scaleX(1) scaleY(1) scaleZ(1) rotateX(5deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
-}
-.reflet {
-    position:absolute;
-    opacity:.5;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background: linear-gradient(30deg, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 100%);
-    background-size: 200% 110%;
-    transition: all .5s ease;
-}
-.reflet:hover {
-    background-size:200% 160%;
-} */
 
-/* agrandir */
 ul figure{
     margin: 1rem;
 }
@@ -199,7 +126,7 @@ ul figure:hover figcaption{
 
 /* modale */
 .parent-modale{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width:100%;
@@ -210,7 +137,7 @@ ul figure:hover figcaption{
     transition: all 0.4s ease-in-out;
 }
 .parent-modale .modale{
-    max-width: 30rem;
+    max-width: 50rem;
     padding: 1rem;
     position: fixed;
     top: 50%;
@@ -252,42 +179,11 @@ ul figure:hover figcaption{
     cursor: pointer;
 }
 /* formulaire */
-section hr{
-    height: .1rem;
-    background-color: #616161;
-    border: none;
-}
-.remplir{
-    text-align: center;
-    background-color: #24282F;
-    transform: translateY(2.6rem);
-    margin: 0rem auto;
-    width: 40rem;
-    color: rgb(228, 228, 228);    
-}
-.rhr{
-    padding-bottom: 5rem;
-}
-.form *{
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 1rem;
+main form input{
+    width: 100%;
     
 }
-fieldset{
-    margin: 5rem auto;
-    border: none;
-}
-main .form{
-    font-size: 1.8rem; 
-    color: white;
-    width: 60vw;
-    margin: 0 auto;
-}
-main .form input{
-    margin-top: 1rem;
-}
-.form input, .form select{
+form input{
     background-color: #3b3b3b;
     border: none;
     border-radius: 0.3rem;
@@ -296,7 +192,7 @@ main .form input{
     width: 60vw;
     /* margin: 0 auto; */
 }
-.form input:hover, .form select:hover{
+form input:hover{
     background-color: #505050;
     transition:all .1s ease-out;
 }
@@ -307,16 +203,75 @@ form select{
     color: #cccccc;
 }
 form input[type="submit"]{
-    background-color: var(--secondary-color);
+    background-color: #3b3b3b;
     color:#FFF;
     cursor:grab;
-    margin-top: 8rem;
-    padding: 2rem;
+    margin-top: 3rem;
+    padding: 1.5rem;
     transition:all .2s ease-out;
 }
 form input[type="submit"]:hover{
+    background-color: #505050;
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.79);
+}
+section form{
+    width: 35rem;
+    margin: 5rem auto;
+    margin-bottom: 2rem;
     background-color: var(--secondary-color);
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.79);
+    padding: 5rem;
+}
+main a{
+    color: white;
+    background-color: var(--secondary-color);
+    display: block;
+	margin: 5rem auto;
+	padding: 1.5rem;
+	text-align: center;
+	max-width: 35rem;
+}
+form a{
+    color: white;
+    background-color: var(--secondary-color);
+    display: block;
+	margin: 2rem auto;
+	text-align: center;
+}
+.inscrip{
+    color: white;
+    background-color: var(--secondary-color);
+    display: block;
+	margin: 5rem auto;
+	padding: 1.5rem;
+	text-align: center;
+	max-width: 35rem;
+}
+form h2 {
+    margin: 0 0 2rem;
+}
+form h3{
+    margin: 0 0 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.form-control, .btn {
+    min-height: 3rem;
+    margin: 0 0 1rem;
+    border: none;
+}
+.btn {        
+    font-size: 15px;
+    font-weight: bold;
+}
+.error{
+    color: red;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.success{
+    color: green;
+    font-size: 2.5rem;
+    text-align: center;
 }
 @media screen and (max-width: 60rem){
 	header{
