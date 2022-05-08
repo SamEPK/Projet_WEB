@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./asset/logo.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Maisons des sports - Formulaire</title>
+    <title>Maison des sports - Formulaire</title>
 </head>
 <body>
     <header>
