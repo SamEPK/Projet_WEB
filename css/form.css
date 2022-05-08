@@ -47,8 +47,7 @@ header h1{
 }
 header img{
     display: flex;
-   
-    max-width: 10rem;
+    max-width: 7rem;
 }
 figure ul{
     display: grid;

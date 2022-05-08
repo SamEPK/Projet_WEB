@@ -64,7 +64,7 @@ header h1{
 }
 header img{
     display: flex;
-    max-width: 25rem;
+    max-width: 7rem;
 }
 section h2{
     text-align: center;

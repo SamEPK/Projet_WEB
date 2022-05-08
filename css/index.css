@@ -65,7 +65,7 @@ header h1{
 }
 header img{
     display: flex;
-    max-width: 25rem;
+    max-width: 7rem;
 }
 section h2{
     text-align: center;
@@ -95,10 +95,11 @@ main .grid-picture-large{
     display:  grid;
     max-width: 120rem;
     margin: 0 auto;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 ul figure{
     position: relative;
+    height: 39rem;
 }
 ul figure .material-icons{
     vertical-align: -.4rem;
@@ -330,7 +331,8 @@ form input[type="submit"]:hover{
 	header img{
 		display: block;
 		margin: 0 auto;
-		max-width: 15rem;
+		max-width: 10rem;
+        
 	}
     main .form{
         font-size: 1.8rem; 

@@ -5,122 +5,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./asset/Steam_icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/logo.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Steam - Formulaire</title>
+    <title>Maisons des sports - Formulaire</title>
 </head>
 <body>
     <header>
-        <h1>Jeux, Visuals Novels et bien plus en illimité.</h1> 
-        <a href="./accueil.php"><img src="./asset/logo_steam.svg" alt="steam_logo"></a>
+        <a href="login.php" class="connex"> Connexion </a>
+        <h1>Maison des ligues tous les sports</h1>
+        <a href="./accueil.php"><img src="./asset/logo.png" alt="icone de sport"></a>
     </header>
     <main>
     <section>
-        <h2>Prêt à jouer ? Remplissez le formulaire proposé dans cette page</h2>
-        <p>Tous les mois profitez de toutes les nouveautés jeux et visuals novels.
-            A partir du mois prochain on vous propose tous les classiques du jeux-vidéos.
-            Tous les jeux en VO, VOST, VF et plus d'options.</p>
+       <h2>Prêt à la compétition? Remplissez le formulaire proposé dans cette page</h2>
+      <p>Tous les mois profitez de toutes les nouveautés et opportunités. A partir du mois
+        prochain on vous propose toutes les séance de sport sur vos support préférés</p>
     </section>
     <ul class="grid-picture-large">
-      <li
-      data-image="./asset/Y0.png" 
-      data-title="Yakuza 0" 
-      data-description="c'est un film épatant, entre action et émotion..." 
-      data-dates="02/01/2020">
-            <figure>
-              <img src="./asset/Y0.png" alt="Y0">
-              <figcaption>
-                <h2>
-                  <i class="material-icons" aria-hidden="true">
-                    pages
-                </i>
-                Agrandir
-                    
-                </h2>
-              </figcaption>
-            </figure>
-       </li>
-      <li 
-      data-image="./asset/MGS2.png" 
-      data-title="Metal Gear Solid 2" 
-      data-description="c'est un film épatant, entre action et émotion..." 
-      data-dates="02/01/2020">
-      <figure>
-        <img src="./asset/MGS2.png" alt="MGS2">
-        <figcaption>
-          <h2>
-            <i class="material-icons" aria-hidden="true">
-              pages
-          </i>
-          Agrandir
-              
-          </h2>
-        </figcaption>
-      </figure>
-              
-
-        </li>
-        <li 
-        data-image="./asset/SG.png" 
-        data-title="Steins;Gate" 
-        data-description="c'est un film épatant, entre action et émotion..." 
-        data-dates="02/01/2020">
+      <li data-image="./asset/1.png" data-title="Boxe"
+        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
         <figure>
-          <img src="./asset/SG.png" alt="SG">
+          <img src="./asset/1.png" alt="Boxe">
           <figcaption>
             <h2>
               <i class="material-icons" aria-hidden="true">
                 pages
-            </i>
-            Agrandir
-                
+              </i>
+              Agrandir
+
             </h2>
           </figcaption>
         </figure>
-          
-              
-           
-         
-       </li>
-       <li 
-       data-image="./asset/AC.png" 
-       data-title="Assassin's Creed" 
-       data-description="c'est un film épatant, entre action et émotion..." 
-       data-dates="02/01/2020">
-       <figure>
-          <img src="./asset/AC.png" alt="AC">
-         <figcaption>
-           <h2>
-             <i class="material-icons" aria-hidden="true">
-               pages
-           </i>
-           Agrandir
-               
-           </h2>
-         </figcaption>
-       </figure>
-
-             
-
-         
-        </li>
-        <li 
-        data-image="./asset/Muramasa.png" 
-        data-title="Fullmetal Daemon Muramasa" 
-        data-description="c'est un film épatant, entre action et émotion..." 
-        data-dates="02/01/2020">
+      </li>
+      <li data-image="./asset/2.jpg" data-title="Muay Thai"
+        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
         <figure>
-           <img src="./asset/Muramasa.png" alt="Muramasa">
+          <img src="./asset/2.jpg" alt="Muay Thai">
           <figcaption>
             <h2>
               <i class="material-icons" aria-hidden="true">
                 pages
-            </i>
-            Agrandir
-                
+              </i>
+              Agrandir
+
             </h2>
           </figcaption>
-        </figure></li>
+        </figure>
+
+
+      </li>
+      <li data-image="./asset/3.jpg" data-title="Karate"
+        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
+        <figure>
+          <img src="./asset/3.jpg" alt="Karate">
+          <figcaption>
+            <h2>
+              <i class="material-icons" aria-hidden="true">
+                pages
+              </i>
+              Agrandir
+
+            </h2>
+          </figcaption>
+        </figure>
+
+
+
+
+      </li>
+      <li data-image="./asset/4.png" data-title="Escrime"
+        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
+        <figure>
+          <img src="./asset/4.png" alt="Escrime">
+          <figcaption>
+            <h2>
+              <i class="material-icons" aria-hidden="true">
+                pages
+              </i>
+              Agrandir
+
+            </h2>
+          </figcaption>
+        </figure>
+
+
+
+
+      </li>
     </ul>
     <section class="rhr">
         <h2 class="remplir">Remplissez le formulaire</h2><hr>
@@ -167,7 +138,7 @@
     </form> 
     </figure>
     </main>
-    <footer><p>@ - Gaming - 2022</p></footer>
+    <footer><p>@ - Maison des ligues - 2022</p></footer>
     <div class="parent-modale" role="dialog">
       <figure class="modale">
           <button aria-label="closed">

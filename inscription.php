@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/login.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./asset/Steam_icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/logo.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Steam</title>
+    <title>Maison des sports</title>
 </head>
 <body>
     <header>
-        <h1>Jeux, Visuals Novels et bien plus en illimité.</h1> 
-        <a href="./accueil.php"><img src="./asset/logo_steam.svg" alt="steam_logo"></a>
+        <h1>Maison des ligues tous les sports</h1>
+        <a href="./accueil.php"><img src="./asset/logo.png" alt="icone de sport"></a>
         
     </header>
     <main>
@@ -91,5 +91,8 @@
             </form>
         </section>
     </main>
+    <footer>
+       <p>@ - Maison des ligues - 2022</p>
+    </footer> 
         </body>
 </html>
