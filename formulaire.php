@@ -11,20 +11,21 @@
 </head>
 <body>
     <header>
-        <h1>Jeux, Visuals Novels et bien plus en illimité.</h1> 
-        <img src="./asset/logo.png" alt="icone de sport">
+        <a href="login.php" class="connex"> Connexion </a>
+        <h1>Maison des ligues tous les sports</h1>
+        <a href="./accueil.php"><img src="./asset/logo.png" alt="icone de sport"></a>
     </header>
     <main>
     <section>
-      <h2>Prêt à la compétition? Remplissez le formulaire proposé dans cette page</h2>
+       <h2>Prêt à la compétition? Remplissez le formulaire proposé dans cette page</h2>
       <p>Tous les mois profitez de toutes les nouveautés et opportunités. A partir du mois
         prochain on vous propose toutes les séance de sport sur vos support préférés</p>
     </section>
     <ul class="grid-picture-large">
-      <li data-image="./asset/1.png" data-title="Yakuza 0"
+      <li data-image="./asset/1.png" data-title="Boxe"
         data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
         <figure>
-          <img src="./asset/1.png" alt="Y0">
+          <img src="./asset/1.png" alt="Boxe">
           <figcaption>
             <h2>
               <i class="material-icons" aria-hidden="true">
@@ -36,27 +37,10 @@
           </figcaption>
         </figure>
       </li>
-      <li data-image="./asset/2.jpg" data-title="Metal Gear Solid 2"
+      <li data-image="./asset/2.jpg" data-title="Muay Thai"
         data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
         <figure>
-          <img src="./asset/2.jpg" alt="MGS2">
-          <figcaption>
-            <h2>
-              <i class="material-icons" aria-hidden="true">
-                pages
-              </i>
-              Agrandir
-
-            </h2>
-          </figcaption>
-        </figure>
-
-
-      </li>
-      <li data-image="./asset/3.jpg" data-title="Steins;Gate"
-        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
-        <figure>
-          <img src="./asset/3.jpg" alt="SG">
+          <img src="./asset/2.jpg" alt="Muay Thai">
           <figcaption>
             <h2>
               <i class="material-icons" aria-hidden="true">
@@ -69,13 +53,11 @@
         </figure>
 
 
-
-
       </li>
-      <li data-image="./asset/4.png" data-title="Assassin's Creed"
+      <li data-image="./asset/3.jpg" data-title="Karate"
         data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
         <figure>
-          <img src="./asset/4.png" alt="AC">
+          <img src="./asset/3.jpg" alt="Karate">
           <figcaption>
             <h2>
               <i class="material-icons" aria-hidden="true">
@@ -86,9 +68,31 @@
             </h2>
           </figcaption>
         </figure>
-      </li>
-     </ul>
 
+
+
+
+      </li>
+      <li data-image="./asset/4.png" data-title="Escrime"
+        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
+        <figure>
+          <img src="./asset/4.png" alt="Escrime">
+          <figcaption>
+            <h2>
+              <i class="material-icons" aria-hidden="true">
+                pages
+              </i>
+              Agrandir
+
+            </h2>
+          </figcaption>
+        </figure>
+
+
+
+
+      </li>
+    </ul>
     <section class="rhr">
         <h2 class="remplir">Remplissez le formulaire</h2><hr>
     </section>
@@ -134,7 +138,7 @@
     </form> 
     </figure>
     </main>
-    <footer><p>@ - Gaming - 2022</p></footer>
+    <footer><p>@ - Maison des ligues - 2022</p></footer>
     <div class="parent-modale" role="dialog">
       <figure class="modale">
           <button aria-label="closed">

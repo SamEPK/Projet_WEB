@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./asset/logo.png">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>Maison des sports</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Maison des sports</title>
 </head>
-
 <body>
-  <header>
-    <h1>Maison des ligues tous les sports</h1>
-    <img src="./asset/logo.png" alt="icone de sport">
-  </header>
-  <main>
-
+    <header>
+        <a href="login.php" class="connex"> Connexion </a>
+        <h1>Maison des ligues tous les sports</h1>
+        <img src="./asset/logo.png" alt="steam_logo">
+        
+    </header>
+    <main>
     <section>
-      <h2>Prêt à la compétition? Remplissez le formulaire proposé dans cette page</h2>
+    <h2>Prêt à la compétition? Remplissez le formulaire proposé dans cette page</h2>
       <p>Tous les mois profitez de toutes les nouveautés et opportunités. A partir du mois
         prochain on vous propose toutes les séance de sport sur vos support préférés</p>
     </section>
-
-    <!-- <div class="view">
-      <p>Cette page a été vue</p>
-      <h1 id="count">0</h1>
-      <p>times</p>
-    </div> -->
-    
+        
     <ul class="grid-picture-large">
       <li data-image="./asset/1.png" data-title="Boxe"
         data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
@@ -241,32 +234,31 @@
 </li>
 </ul>
 
-
-    <a href="./formulaire.html">Cliquez ici pour commencer</a>
-
-
-  </main>
-  <footer>
-    <p>@ - Maisons des ligues - 2022</p>
-  </footer>
-  <!-- modale -->
-  <div class="parent-modale" role="dialog">
-    <figure class="modale">
-      <button aria-label="closed">
-        <span class="material-icons">clear</span>
-      </button>
-      <img src="https://via.placeholder.com/500" alt="picture">
-      <figcaption class="desc">
-        <h3>title</h3>
-        <p>
-
-        </p>
-        <time>Years : </time>
-      </figcaption>
-    </figure>
+            <a href="./formulaire.php">Cliquez ici pour commencer</a>
+            
+          
+       
+    </main>
+   
+       <footer>
+       <p>@ - Maison des ligues - 2022</p>
+        </footer>    
+        <!-- modale -->
+    <div class="parent-modale" role="dialog">
+      <figure class="modale">
+          <button aria-label="closed">
+              <span class="material-icons">clear</span>
+          </button>
+          <img src="https://via.placeholder.com/500" alt="picture">
+          <figcaption class="desc">
+              <h3>title</h3>
+              <p>
+                 
+              </p>
+              <time>Years : </time>
+          </figcaption>
+      </figure>
   </div>
   <script src="./js/app.js"></script>
-  <script src="./js/test.js"></script>
 </body>
-
 </html>
