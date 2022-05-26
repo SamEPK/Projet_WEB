@@ -34,217 +34,38 @@
       <p>Tous les mois profitez de toutes les nouveautés et opportunités. A partir du mois
         prochain on vous propose toutes les séance de sport sur vos support préférés</p>
     </section>
-        
-    <ul class="grid-picture-large">
-      <li data-image="./asset/1.png" data-title="Boxe"
-        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
-        <figure>
-          <img src="./asset/1.png" alt="Boxe">
-          <figcaption>
-            <h2>
-              <i class="material-icons" aria-hidden="true">
-                pages
-              </i>
-              Participer ?
 
-            </h2>
-          </figcaption>
-        </figure>
-      </li>
-      <li data-image="./asset/2.jpg" data-title="Muay Thai"
-        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
-        <figure>
-          <img src="./asset/2.jpg" alt="Muay Thai">
-          <figcaption>
-            <h2>
-              <i class="material-icons" aria-hidden="true">
-                pages
-              </i>
-              Participer ?
+    <ul class="grid-picture-large" aria-hidden="true">
+    <?php
+    $request = $bdd->query('SELECT * FROM evenement');
 
-            </h2>
-          </figcaption>
-        </figure>
+    while ($donnees = $request->fetch()) {
+    ?>
+                <li data-image="<?php echo htmlspecialchars($donnees['image']); ?>" data-title="<?php echo htmlspecialchars($donnees['nom']); ?>"
+                    data-description="<?php echo htmlspecialchars($donnees['desc']); ?>"
+                    data-dates="<?php echo htmlspecialchars($donnees['date_modification']); ?>">
+                    <figure>
+                        <img src="<?php echo htmlspecialchars($donnees['image']); ?>" alt="<?php echo htmlspecialchars($donnees['nom']); ?>">
+                        <figcaption>
+                            <h2>
+                                <i class="material-icons" aria-hidden="true">
+                                    pages
+                                </i>
+                                Agrandir
 
+                            </h2>
+                        </figcaption>
 
-      </li>
-      <li data-image="./asset/3.jpg" data-title="Karate"
-        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
-        <figure>
-          <img src="./asset/3.jpg" alt="Karate">
-          <figcaption>
-            <h2>
-              <i class="material-icons" aria-hidden="true">
-                pages
-              </i>
-              Participer ?
+                    </figure>
+                </li>
+                <?php
+    }
 
-            </h2>
-          </figcaption>
-        </figure>
+    $request->closeCursor(); // Fin de requète SQL
 
+    ?>
 
-
-
-      </li>
-      <li data-image="./asset/4.png" data-title="Escrime"
-        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
-        <figure>
-          <img src="./asset/4.png" alt="Escrime">
-          <figcaption>
-            <h2>
-              <i class="material-icons" aria-hidden="true">
-                pages
-              </i>
-              Participer ?
-
-            </h2>
-          </figcaption>
-        </figure>
-
-
-
-
-      </li>
-      <li data-image="./asset/5.jpg" data-title="Fitness"
-        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
-        <figure>
-          <img src="./asset/5.jpg" alt="Fitness">
-          <figcaption>
-            <h2>
-              <i class="material-icons" aria-hidden="true">
-                pages
-              </i>
-              Participer ?
-
-            </h2>
-          </figcaption>
-        </figure>
-
-
-
-
-      </li>
-      <li data-image="./asset/6.jpg" data-title="Centre de sport"
-        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
-        <figure>
-          <img src="./asset/6.jpg" alt="Centre de sport">
-          <figcaption>
-            <h2>
-              <i class="material-icons" aria-hidden="true">
-                pages
-              </i>
-              Participer ?
-
-            </h2>
-          </figcaption>
-        </figure>
-
-
-
-
-      </li>
-      <li data-image="./asset/7.jpg" data-title="Handball"
-        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
-        <figure>
-          <img src="./asset/7.jpg" alt="Handball">
-          <figcaption>
-            <h2>
-              <i class="material-icons" aria-hidden="true">
-                pages
-              </i>
-              Participer ?
-
-            </h2>
-          </figcaption>
-        </figure>
-
-
-
-      </li>
-      <li data-image="./asset/8.jpg" data-title="Beach Volley"
-        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
-        <figure>
-          <img src="./asset/8.jpg" alt="Beach Volley">
-          <figcaption>
-            <h2>
-              <i class="material-icons" aria-hidden="true">
-                pages
-              </i>
-              Participer ?
-
-            </h2>
-          </figcaption>
-        </figure>
-
-
-      </li>
-      <li data-image="./asset/9.png" data-title="Basketball"
-        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
-        <figure>
-          <img src="./asset/9.png" alt="Basketball">
-          <figcaption>
-            <h2>
-              <i class="material-icons" aria-hidden="true">
-                pages
-              </i>
-              Participer ?
-
-            </h2>
-          </figcaption>
-        </figure>
-
-
-      </li>
-      <li data-image="./asset/10.jpg" data-title="Week-End d'aventure"
-        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
-        <figure>
-          <img src="./asset/10.jpg" alt="Week-End d'aventure">
-          <figcaption>
-            <h2>
-              <i class="material-icons" aria-hidden="true">
-                pages
-              </i>
-              Participer ?
-
-            </h2>
-          </figcaption>
-        </figure>
-
-
-      </li>
-      <li data-image="./asset/11.jpg" data-title="Aikido"
-        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
-        <figure>
-          <img src="./asset/11.jpg" alt="Aikido">
-          <figcaption>
-            <h2>
-              <i class="material-icons" aria-hidden="true">
-                pages
-              </i>
-              Participer ?
-
-            </h2>
-          </figcaption>
-        </figure>
-
-
-      </li>
-      <li data-image="./asset/12.jpg" data-title="Tenis"
-        data-description="c'est un film épatant, entre action et émotion..." data-dates="02/01/2020">
-        <figure>
-          <img src="./asset/12.jpg" alt="Tenis">
-          <figcaption>
-            <h2>
-              <i class="material-icons" aria-hidden="true">
-                pages
-              </i>
-              Participer ?
-            </h2>
-          </figcaption>
-        </figure>
-</li>
-</ul>       
+            </ul>      
     </main>
    
        <footer class=pied_membre>

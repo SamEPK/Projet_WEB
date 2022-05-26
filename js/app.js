@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", e => {
         let title = this.dataset.title;
         let desc = this.dataset.description;
         let dates = this.dataset.dates;
-        let input = this.dataset.input;
         modal.classList.add("modale-active"); /* ajouter la classe active */
         /* sélectionner les sélecteurs html*/
         document.querySelector(".modale img").setAttribute("src", image);
