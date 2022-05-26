@@ -1,3 +1,15 @@
+<?php 
+    session_start();
+    require_once './pages/config.php'; // ajout connexion bdd 
+   // si la session existe pas soit si l'on est pas connecté on redirige
+    
+
+    // On récupere les données de l'utilisateur
+    $req = $bdd->prepare('SELECT * FROM client WHERE token = ?');
+    $req->execute(array($_SESSION['user']));
+    $data = $req->fetch();
+   
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,14 +23,14 @@
 </head>
 <body>
     <header>
-        <a href="./pages/login.php" class="connex"> Connexion </a>
+        <a href="./pages/deconnexion.php" class="connex">Déconnexion</a>
         <h1>Maison des ligues tous les sports</h1>
         <img src="./asset/logo.png" alt="steam_logo">
         
     </header>
     <main>
     <section>
-    <h2>Prêt à la compétition? Remplissez le formulaire proposé dans cette page</h2>
+    <h2>Bonjour <?php echo $data['pseudo']; ?> ! Prêt à la compétition?</h2>
       <p>Tous les mois profitez de toutes les nouveautés et opportunités. A partir du mois
         prochain on vous propose toutes les séance de sport sur vos support préférés</p>
     </section>
@@ -33,7 +45,7 @@
               <i class="material-icons" aria-hidden="true">
                 pages
               </i>
-              Agrandir
+              Participer ?
 
             </h2>
           </figcaption>
@@ -48,7 +60,7 @@
               <i class="material-icons" aria-hidden="true">
                 pages
               </i>
-              Agrandir
+              Participer ?
 
             </h2>
           </figcaption>
@@ -65,7 +77,7 @@
               <i class="material-icons" aria-hidden="true">
                 pages
               </i>
-              Agrandir
+              Participer ?
 
             </h2>
           </figcaption>
@@ -84,7 +96,7 @@
               <i class="material-icons" aria-hidden="true">
                 pages
               </i>
-              Agrandir
+              Participer ?
 
             </h2>
           </figcaption>
@@ -103,7 +115,7 @@
               <i class="material-icons" aria-hidden="true">
                 pages
               </i>
-              Agrandir
+              Participer ?
 
             </h2>
           </figcaption>
@@ -122,7 +134,7 @@
               <i class="material-icons" aria-hidden="true">
                 pages
               </i>
-              Agrandir
+              Participer ?
 
             </h2>
           </figcaption>
@@ -141,7 +153,7 @@
               <i class="material-icons" aria-hidden="true">
                 pages
               </i>
-              Agrandir
+              Participer ?
 
             </h2>
           </figcaption>
@@ -159,7 +171,7 @@
               <i class="material-icons" aria-hidden="true">
                 pages
               </i>
-              Agrandir
+              Participer ?
 
             </h2>
           </figcaption>
@@ -176,7 +188,7 @@
               <i class="material-icons" aria-hidden="true">
                 pages
               </i>
-              Agrandir
+              Participer ?
 
             </h2>
           </figcaption>
@@ -193,7 +205,7 @@
               <i class="material-icons" aria-hidden="true">
                 pages
               </i>
-              Agrandir
+              Participer ?
 
             </h2>
           </figcaption>
@@ -210,7 +222,7 @@
               <i class="material-icons" aria-hidden="true">
                 pages
               </i>
-              Agrandir
+              Participer ?
 
             </h2>
           </figcaption>
@@ -227,20 +239,15 @@
               <i class="material-icons" aria-hidden="true">
                 pages
               </i>
-              Agrandir
+              Participer ?
             </h2>
           </figcaption>
         </figure>
 </li>
-</ul>
-
-            <a href="./formulaire.php">Cliquez ici pour commencer</a>
-            
-          
-       
+</ul>       
     </main>
    
-       <footer>
+       <footer class=pied_membre>
        <p>@ - Maison des ligues - 2022</p>
         </footer>    
         <!-- modale -->
@@ -255,8 +262,8 @@
               <p>
                  
               </p>
-              <time>Years : </time>
-              <a href="./pages/login.php" class="connex"> Connexion </a>
+              <time>Years : </time> <br>
+              <input type="submit" aria-label="Participer" value="Participer">
           </figcaption>
       </figure>
   </div>

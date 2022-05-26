@@ -27,9 +27,9 @@
                 // Si le mot de passe est le bon
                 if(password_verify($password, $data['password']))
                 {
-                    // On créer la session et on redirige sur landing.php
+                    // On créer la session et on redirige sur accueil.php
                     $_SESSION['user'] = $data['token'];
-                    header('Location: landing.php');
+                    header('Location: ../accueil_membre.php');
                     die();
                 }else{ header('Location: login.php?login_err=password'); die(); }
             }else{ header('Location: login.php?login_err=email'); die(); }

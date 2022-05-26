@@ -19,20 +19,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./asset/logo.png">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../asset/logo.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Maisons des sports</title>
 </head>
 <body>
     <header>
         <h1>Maison des ligues tous les sports</h1>
-        <a href="./accueil.php"><img src="./asset/logo.png" alt="icone de sport"></a>
+        <a href="../accueil.php"><img src="../asset/logo.png" alt="icone de sport"></a>
     </header>
     <main>
         <section>
         
-                <?php 
+                <!-- <?php  
                         if(isset($_GET['err'])){
                             $err = htmlspecialchars($_GET['err']);
                             switch($err){
@@ -45,7 +45,7 @@
                                 break; 
                             }
                         }
-                    ?>
+                    ?>-->
 
 
                 
@@ -57,7 +57,7 @@
                       
                             
                          
-                                <form action="layouts/change_password.php" method="POST">  
+                                <!-- <form action="layouts/change_password.php" method="POST">  
                                     <h3 class="modal-title">Changer mon mot de passe</h5>
                                     <label for='current_password'>Mot de passe actuel</label>
                                     <input type="password" id="current_password" name="current_password" class="form-control" required/>
@@ -69,7 +69,7 @@
                                     <input type="password" id="new_password_retype" name="new_password_retype" class="form-control" required/>
                                     <br />
                                     <input type="submit" value="Sauvegarder">
-                                </form>
+                                </form> -->
                       
                      
                             

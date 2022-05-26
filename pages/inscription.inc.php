@@ -57,7 +57,9 @@
                 ?>
             
             <form action="inscription_traitement.php" method="post">
-                <h2 class="text-center">Inscription</h2>       
+            <section class="rhr">
+                <h2 class="remplir">Inscription</h2><hr>
+            </section>                    
               
                     <input type="text" name="pseudo" class="form-control" placeholder="Pseudo" required="required" autocomplete="off">
            
