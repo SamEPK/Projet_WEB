@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/login.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./asset/logo.png">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Maison des sports</title>
-</head>
-<body>
-    <header>
-        <h1>Maison des ligues tous les sports</h1>
-        <a href="../accueil.php"><img src="../asset/logo.png" alt="icone de sport"></a>
-        
-    </header>
-    <main>
-            <section>
+<section>
       
             <?php 
                 if(isset($_GET['reg_err']))
@@ -86,13 +68,7 @@
                     <input type="password" name="password_retype" class="form-control" placeholder="Re-tapez le mot de passe" required="required" autocomplete="off">
             
                     <input type="submit" value="Inscription">
-                    <a href="login.php">Déjà un compte ?</a>
+                    <a href="pages/login.php">Déjà un compte ?</a>
               
             </form>
         </section>
-    </main>
-    <footer>
-       <p>@ - Maison des ligues - 2022</p>
-    </footer> 
-        </body>
-</html>

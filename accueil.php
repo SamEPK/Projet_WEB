@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <a href="login.php" class="connex"> Connexion </a>
+        <a href="./pages/login.php" class="connex"> Connexion </a>
         <h1>Maison des ligues tous les sports</h1>
         <img src="./asset/logo.png" alt="steam_logo">
         

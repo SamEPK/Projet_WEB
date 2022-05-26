@@ -269,7 +269,7 @@ section hr{
 .rhr{
     padding-bottom: 5rem;
 }
-.form *{
+form *{
     display: block;
     margin: 0 auto;
     margin-bottom: 1rem;
@@ -279,16 +279,16 @@ fieldset{
     margin: 5rem auto;
     border: none;
 }
-main .form{
+main form{
     font-size: 1.8rem; 
     color: white;
     width: 60vw;
     margin: 0 auto;
 }
-main .form input{
+main form input{
     margin-top: 1rem;
 }
-.form input, .form select{
+form input, form select{
     background-color: #3b3b3b;
     border: none;
     border-radius: 0.3rem;
@@ -297,7 +297,7 @@ main .form input{
     width: 60vw;
     /* margin: 0 auto; */
 }
-.form input:hover, .form select:hover{
+form input:hover, form select:hover{
     background-color: #505050;
     transition:all .1s ease-out;
 }
@@ -311,7 +311,7 @@ form input[type="submit"]{
     background-color: var(--secondary-color);
     color:#FFF;
     cursor:grab;
-    margin-top: 8rem;
+    margin-top: 5rem;
     padding: 2rem;
     transition:all .2s ease-out;
 }
@@ -319,6 +319,7 @@ form input[type="submit"]:hover{
     background-color: var(--secondary-color);
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.79);
 }
+
 @media screen and (max-width: 60rem){
 	header{
 		display: block;

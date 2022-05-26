@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <a href="login.php" class="connex"> Connexion </a>
+        <a href="./pages/login.php" class="connex"> Connexion </a>
         <h1>Maison des ligues tous les sports</h1>
         <a href="./accueil.php"><img src="./asset/logo.png" alt="icone de sport"></a>
     </header>
@@ -93,7 +93,10 @@
 
       </li>
     </ul>
-    <section class="rhr">
+    <?php
+    include_once './pages/inscription.inc.php';
+    ?>
+    <!-- <section class="rhr">
         <h2 class="remplir">Remplissez le formulaire</h2><hr>
     </section>
     <figure class="form" role="form">
@@ -136,7 +139,7 @@
             <input type="submit" aria-label="Valider" value="Valider">
        </fieldset>  
     </form> 
-    </figure>
+    </figure> -->
     </main>
     <footer><p>@ - Maison des ligues - 2022</p></footer>
     <div class="parent-modale" role="dialog">
