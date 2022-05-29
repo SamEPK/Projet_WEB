@@ -38,13 +38,12 @@
                               ATTENTION
                             */
                             // On insère dans la base de données
-                            $insert = $bdd->prepare('INSERT INTO client(pseudo, email, password, ip, token) VALUES(:pseudo, :email, :password, :ip, :token)');
+                            $insert = $bdd->prepare('INSERT INTO client(pseudo, email, password, id) VALUES(:pseudo, :email, :password, :id)');
                             $insert->execute(array(
                                 'pseudo' => $pseudo,
                                 'email' => $email,
                                 'password' => $password,
-                                'ip' => $ip,
-                                'token' => bin2hex(openssl_random_pseudo_bytes(64))
+                                'id' => $id
                             ));
                             // On redirige avec le message de succès
                             header('Location:inscription.php?reg_err=success');

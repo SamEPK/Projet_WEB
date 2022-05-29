@@ -217,6 +217,7 @@ ul figure:hover figcaption{
 .parent-modale .modale{
     max-width: 30rem;
     padding: 1rem;
+    margin: 0 auto;
     position: fixed;
     top: 50%;
     left: 50%;

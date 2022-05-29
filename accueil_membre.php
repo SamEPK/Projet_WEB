@@ -5,7 +5,7 @@
     
 
     // On récupere les données de l'utilisateur
-    $req = $bdd->prepare('SELECT * FROM client WHERE token = ?');
+    $req = $bdd->prepare('SELECT * FROM client WHERE id = ?');
     $req->execute(array($_SESSION['user']));
     $data = $req->fetch();
    

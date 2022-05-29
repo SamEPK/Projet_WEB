@@ -11,7 +11,7 @@
         $email = strtolower($email); // email transformé en minuscule
         
         // On regarde si l'utilisateur est inscrit dans la table utilisateurs
-        $check = $bdd->prepare('SELECT pseudo, email, password, token FROM client WHERE email = ?');
+        $check = $bdd->prepare('SELECT pseudo, email, password, id FROM client WHERE email = ?');
         $check->execute(array($email));
         $data = $check->fetch();
         $row = $check->rowCount();
@@ -28,7 +28,7 @@
                 if(password_verify($password, $data['password']))
                 {
                     // On créer la session et on redirige sur accueil.php
-                    $_SESSION['user'] = $data['token'];
+                    $_SESSION['user'] = $data['id'];
                     header('Location: ../accueil_membre.php');
                     die();
                 }else{ header('Location: login.php?login_err=password'); die(); }
