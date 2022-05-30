@@ -1,7 +1,6 @@
 <?php 
     session_start();
     require_once './pages/config.php'; // ajout connexion bdd 
-   // si la session existe pas soit si l'on est pas connecté on redirige
     
 
     // On récupere les données de l'utilisateur
@@ -29,6 +28,27 @@
         
     </header>
     <main>
+    <?php
+            if(isset($_SESSION["id"]) && isset($_GET['idEvenement'])){
+                include_once "./pages/config.php";
+                $_date = new DateTime();
+                $_date = $_date->format('Y-m-d H:i:s'); 
+                print "L'id event : " . $_GET["idEvenement"] . " | l'id de la session : " . $_SESSION["id"] . " | la date : " . $_date;
+                try {
+                $_date = new DateTime();
+                $_date = $_date->format('Y-m-d H:i:s');
+                $_req = $_bdd->prepare('INSERT INTO historique_client(idClient, idEvenement, date_consultation) VALUES (:client.id, :evenement.id, :date_consultation)');
+                $_req->execute(array(
+                    'idClient' => $_SESSION['id'],
+                    'idEvenement' => $_GET['idEvenement'],
+                    'date_consultation' => $_date,
+                ));
+                print $_SESSION['id'] . $_GET['idEvenement'] . $_date;
+            } catch (Exception $e) {
+                die('Erreur : ' . $e->getMessage());
+            }
+        }
+        ?>   
     <section>
     <h2>Bonjour <?php echo $data['pseudo']; ?> ! Prêt à la compétition?</h2>
       <p>Tous les mois profitez de toutes les nouveautés et opportunités. A partir du mois
@@ -37,13 +57,15 @@
 
     <ul class="grid-picture-large" aria-hidden="true">
     <?php
+    
     $request = $bdd->query('SELECT * FROM evenement');
 
     while ($donnees = $request->fetch()) {
     ?>
                 <li data-image="<?php echo htmlspecialchars($donnees['image']); ?>" data-title="<?php echo htmlspecialchars($donnees['nom']); ?>"
                     data-description="<?php echo htmlspecialchars($donnees['desc']); ?>"
-                    data-dates="<?php echo htmlspecialchars($donnees['date_modification']); ?>">
+                    data-dates="<?php echo htmlspecialchars($donnees['date_modification']); ?>"
+                    data-id="<?php echo htmlspecialchars($donnees['id']); ?>">
                     <figure>
                         <img src="<?php echo htmlspecialchars($donnees['image']); ?>" alt="<?php echo htmlspecialchars($donnees['nom']); ?>">
                         <figcaption>
@@ -84,7 +106,11 @@
                  
               </p>
               <time>Years : </time> <br>
-              <input type="submit" aria-label="Participer" value="Participer">
+              <form method="post" >
+                        <input type="submit" value="S'inscrire à l'évenement">
+                        <?php  include_once "./pages/eventcreate.php" ?>
+                    </form>
+            
           </figcaption>
       </figure>
   </div>

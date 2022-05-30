@@ -56,10 +56,10 @@
                 }
                 ?>
             
-            <form action="inscription_traitement.php" method="post">
+            <form action="inscription_traitement.php" method="post" class="formu">
             <section class="rhr">
                 <h2 class="remplir">Inscription</h2><hr>
-            </section>                    
+            </section >                    
               
                     <input type="text" name="pseudo" class="form-control" placeholder="Pseudo" required="required" autocomplete="off">
            
