@@ -28,27 +28,7 @@
         
     </header>
     <main>
-    <?php
-            if(isset($_SESSION["id"]) && isset($_GET['idEvenement'])){
-                include_once "./pages/config.php";
-                $_date = new DateTime();
-                $_date = $_date->format('Y-m-d H:i:s'); 
-                print "L'id event : " . $_GET["idEvenement"] . " | l'id de la session : " . $_SESSION["id"] . " | la date : " . $_date;
-                try {
-                $_date = new DateTime();
-                $_date = $_date->format('Y-m-d H:i:s');
-                $_req = $_bdd->prepare('INSERT INTO historique_client(idClient, idEvenement, date_consultation) VALUES (:client.id, :evenement.id, :date_consultation)');
-                $_req->execute(array(
-                    'idClient' => $_SESSION['id'],
-                    'idEvenement' => $_GET['idEvenement'],
-                    'date_consultation' => $_date,
-                ));
-                print $_SESSION['id'] . $_GET['idEvenement'] . $_date;
-            } catch (Exception $e) {
-                die('Erreur : ' . $e->getMessage());
-            }
-        }
-        ?>   
+    <?php  include_once "./pages/eventcreate.php" ?> 
     <section>
     <h2>Bonjour <?php echo $data['pseudo']; ?> ! Prêt à la compétition?</h2>
       <p>Tous les mois profitez de toutes les nouveautés et opportunités. A partir du mois
@@ -108,7 +88,7 @@
               <time>Years : </time> <br>
               <form method="post" >
                         <input type="submit" value="S'inscrire à l'évenement">
-                        <?php  include_once "./pages/eventcreate.php" ?>
+                     
                     </form>
             
           </figcaption>
