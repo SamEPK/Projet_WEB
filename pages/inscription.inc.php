@@ -61,7 +61,7 @@
                 <h2 class="remplir">Inscription</h2><hr>
             </section >                    
               
-                    <input type="text" name="pseudo" class="form-control" placeholder="Pseudo" required="required" autocomplete="off">
+                    <input type="text" name="pseudo" class="form-control" placeholder="Nom" required="required" autocomplete="off">
            
                     <input type="email" name="email" class="form-control" placeholder="Email" required="required" autocomplete="off">
          
