@@ -413,7 +413,7 @@ tbody tr{
      
 }
 tbody tr:hover{
-    background-color: rgb(114, 114, 114);
+    background-color: rgb(68, 68, 68);
     color:#fff;
     cursor:pointer; /* changement du signe de la souris au dessus de la phrase*/
 }
