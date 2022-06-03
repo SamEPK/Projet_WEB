@@ -359,6 +359,73 @@ main .formu  input{
     background-color: var(--secondary-color);
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.79);
 }
+/*tableau*/
+.table-primary{
+    display: block;
+    overflow-x: scroll;
+    max-width: 110rem; /* largeur du tableau*/
+    margin: 0 auto;
+    padding: 1rem;
+    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.34);
+    background-color: rgb(43, 43, 43);
+    transition: all .2s ease-in-out;
+    border-radius: .3rem;
+}
+.table-primary:hover {
+    background-color: rgb(46, 46, 46);
+    box-shadow: 0px 0px 19px 1px rgba(0, 0, 0, 0.514);
+}
+.table-primary table{
+    
+    width: 100%; /* case*/
+    line-height: 4.5rem;
+    border-spacing: 0;
+    background-color: #fafafa;
+    border-radius: .3rem;
+}
+table th{
+    padding: 1.5rem;
+}
+table,tr,th,td{
+    /* border: solid 0.1rem #ccc; */
+    border-collapse: collapse; /* ligne fine pour collapse */ /* seprate pour espacer les cellules*/ 
+    padding: 0.5rem;
+}
+table caption{
+    padding: 1.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 5rem;
+    text-shadow: 0.25rem 0.25rem 0 var(--color-primary);
+    }
+    table thead{
+        background-color: var(--color-primary);
+    }
+table thead, tfoot{
+    color: #000000;
+}
+tbody tr:nth-child(2n+1){
+    background-color: var(--secondary-color);
+}
+tbody tr{
+    transition : all 500ms ease-in-out; /* vitesse de transition*/
+     
+}
+tbody tr:hover{
+    background-color: rgb(114, 114, 114);
+    color:#fff;
+    cursor:pointer; /* changement du signe de la souris au dessus de la phrase*/
+}
+tbody tr a{
+    color: rgb(0, 3, 158);
+    font-weight: bold;
+}
+
+table th:nth-of-type(1),table td:nth-of-type(1){
+    width: 20%;
+    text-align: center;
+}
 
 @media screen and (max-width: 60rem){
 	header{
@@ -395,5 +462,14 @@ main .formu  input{
     }
     section h2{
         font-size: 2rem;
+    }
+    /* .table-primary{
+    font-size: 1rem;
+    } */
+    header .connex{
+        
+        margin-left: 0;
+        
+        
     }
 }

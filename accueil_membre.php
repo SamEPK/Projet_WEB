@@ -68,7 +68,9 @@
     ?>
 
             </ul>      
+            <?php include_once "./pages/eventviewer.php" ?>
     </main>
+    
    
        <footer class=pied_membre>
        <p>@ - Maison des ligues - 2022</p>

@@ -4,7 +4,7 @@ require_once './pages/config.php';
             
                 $_date = new DateTime();
                 $_date = $_date->format('Y-m-d H:i:s'); 
-                print "L'id event : " . $_GET["id_event"] . " | l'id de la session : " . $_SESSION["user"] . " | la date : " . $_date;
+                // print "L'id event : " . $_GET["id_event"] . " | l'id de la session : " . $_SESSION["user"] . " | la date : " . $_date;
                 try {
                 $_date = new DateTime();
                 $_date = $_date->format('Y-m-d H:i:s');
@@ -14,7 +14,7 @@ require_once './pages/config.php';
                     'idEvenement' => $_GET['id_event'],
                     'date_consultation' => $_date,
                 ));
-                print $_SESSION['user'] . $_GET['id_event'] . $_date;
+                // print $_SESSION['user'] . $_GET['id_event'] . $_date;
             } catch (Exception $e) {
                 die('Erreur : ' . $e->getMessage());
             }
