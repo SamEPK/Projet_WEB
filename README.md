@@ -56,13 +56,7 @@ Le site web présenté ici a pour fonctionnalité globale la possibilité de s�
 
 En premier lieu, sur la page d’accueil du site, vous aurez accès à la possibilité de vous connecter ou de vous inscrire, soit en cliquant sur “Cliquez ici pour commencer” au bas de la page ou en cliquant sur "Connexion"
 
-<div align="center">
 
-## Le modale
-
-<img src="./Documentation/modale.png" alt="Employe" width="600"/>
-
-</div>
 
 <div align="center">
 
@@ -87,11 +81,7 @@ En premier lieu, sur la page d’accueil du site, vous aurez accès à la possib
 
 </div>
 
-<div align="center">
 
-
-
-</div>
 
 Une fois authentifié, l’utilisateur accède à la page suivante :
 
@@ -104,9 +94,21 @@ Une fois authentifié, l’utilisateur accède à la page suivante :
 Une fois connecté, vous aurez la possibilité de vous inscrire à un événement en cliquant sur l’image puis en validant le bouton “S’inscrire à l'événement” <br>
 Affichant ainsi un tableau répertoriant toutes vos dernières inscriptions aux évènements du site. 
 
+<div align="center">
+
+## Le modale
+
+<img src="./Documentation/modale.png" alt="Employe" width="600"/>
+
+</div>
+
+<div align="center">
+
+# Le profil
+<img src="./Documentation/profil.png" alt="AjoutEmploye" width="600"/>
 
 
-
+</div>
 <hr>
 <br>
 
