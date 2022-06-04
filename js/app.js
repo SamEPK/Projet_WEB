@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", e => {
+	window.history.pushState(1, "Projet_WEB", "/Projet_WEB/accueil_membre.php");
     console.log(navigator.userAgent);
 
     let el, modal, closed, open_modal, closed_all;
@@ -29,19 +30,25 @@ document.addEventListener("DOMContentLoaded", e => {
 		let btn = document.querySelector("main .grid-picture-large");
 		btn.addEventListener("click", (e) => {
 			e.preventDefault();
-			let stateObj = { id: "100" };
-			window.history.pushState(stateObj, "Projet_WEB", "/Projet_WEB/accueil_membre.php?id_event=" + id);
+			window.history.pushState(1, "Projet_WEB", "/Projet_WEB/accueil_membre.php?id_event=" + id);
 		});
 
 	};
 	
 	for (rows of el) {
 		rows.addEventListener("click", open_modal);
-	}
-	closed.addEventListener("click", () => {
+		}
+		
+		closed.addEventListener("click", () => {
+		window.history.pushState(1, "Projet_WEB", "/Projet_WEB/accueil_membre.php");
 		modal.classList.remove("modale-active");
-	});
-	closed_all.addEventListener("click", () => {
+		});
+		
+		closed_all.addEventListener("click", () => {
+		window.history.pushState(1, "Projet_WEB", "/Projet_WEB/accueil_membre.php");
 		modal.classList.remove("modale-active");
-	});
+		});
 });
+
+
+
