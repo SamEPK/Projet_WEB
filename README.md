@@ -100,7 +100,7 @@ Une fois authentifié, l’utilisateur accède à la page suivante :
 # L'accueil du membre 
 
 <img src="./Documentation/accueil_membre.png" alt="AjoutEmploye" width="600"/>
-
+</div>
 Une fois connecté, vous aurez la possibilité de vous inscrire à un événement en cliquant sur l’image puis en validant le bouton “S’inscrire à l'événement” <br>
 Affichant ainsi un tableau répertoriant toutes vos dernières inscriptions aux évènements du site. 
 
