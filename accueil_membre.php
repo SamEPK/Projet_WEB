@@ -22,9 +22,11 @@
 </head>
 <body>
     <header>
+        <a href="profil.php" class="profil">Profil</a>
         <a href="./pages/deconnexion.php" class="connex">Déconnexion</a>
         <h1>Maison des ligues tous les sports</h1>
         <img src="./asset/logo.png" alt="steam_logo">
+        
         
     </header>
     <main>
