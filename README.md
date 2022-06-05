@@ -32,7 +32,8 @@ Cette situation professionnelle est réalisée dans le contexte de la M2L ou Mai
 # `Fonctionnement`
 
 </div>
-Le site web présenté ici a pour fonctionnalité globale la possibilité de s’inscrire et de garder la session enregistrée sur une base de données afin de pouvoir se connecter. Il est aussi possible, une fois connecté, de s’inscrire à un des événements de sport présenté sur la page, cette inscription sera enregistrée et visible par le client, l’information sera aussi stockée sur la base de données. Cette interface sera décrite ici sous forme de manuel d'utilisation de la page.
+Le site web présenté ici a pour fonctionnalités globales la possibilité de s’inscrire et de se connecter en créant une session afin stocker les informations du client sur la base de données. Il est aussi possible, une fois connecté, de s’inscrire à un des événements de sport présenté sur la page, cette inscription sera enregistrée et visible par le client, l’information sera également stockée sur la base de données. Cette interface sera décrite ici sous forme de manuel d'utilisation de la page.
+
 
 
 
