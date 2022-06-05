@@ -462,6 +462,51 @@ table th:nth-of-type(1),table td:nth-of-type(1){
 .info .nom{
     text-transform: capitalize;
 }
+/*form edit*/
+fieldset h2{
+    text-align: center;
+}
+legend{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+fieldset{
+    width: 35rem;
+    margin: 5rem auto;
+    margin-bottom: 2rem;
+    background-color: var(--secondary-color);
+    padding: 5rem;
+}
+.formedit  input, form select{
+    background-color: #3b3b3b;
+    border: none;
+    border-radius: 0.3rem;
+    color: #cccccc;
+    padding: 1rem;
+    width: 30rem;
+    /* margin: 0 auto; */
+}
+.formedit  input:hover, form select:hover{
+    background-color: #505050;
+    transition:all .1s ease-out;
+}
+.formedit  input[type="submit"]{
+    background-color: #3b3b3b;
+    color:#FFF;
+    cursor:grab;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    transition:all .2s ease-out;
+}
+.formedit  input[type="submit"]:hover{
+    background-color: #505050;
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.79);
+}
+.formedit label{
+    text-align: center;
+    margin-top: 2rem;
+}
 
 @media screen and (max-width: 60rem){
 	header{

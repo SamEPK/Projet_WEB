@@ -50,8 +50,11 @@ foreach ($users as $user) {
     }
    
 }
+
  include_once "./pages/eventviewer.php"
      ?>
+                     <a href="./edituser.php">Changer le profil</a>
+
     </main>
         
     
